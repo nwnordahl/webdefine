@@ -10,6 +10,9 @@ body {
   background-color: #272929;
   color: #ffcc00;
   font-family: "Roboto", sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -59,4 +62,40 @@ a {
 
 .nav ul li {
   font-size: 18px;
+}
+
+/* Home content */
+.home-content-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content-container .home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+
+/* Home content text */
+.home-content .text h1 {
+  font-size: 80px;
+}
+
+.home-content .text p {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* Home content button */
+.home-content .button {
+  width: 300px;
+  border: #ffcc00 solid 2px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px 80px;
+  border-radius: 12px;
 }
