@@ -1,1 +1,62 @@
-/* All styling skal skrives her  */
+/* Basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #272929;
+  color: #ffcc00;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 40px 150px 0px 150px;
+  font-weight: bold;
+}
+
+/* Nav logo */
+.nav .logo {
+  margin-right: auto;
+}
+
+.nav .logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav .logo a img {
+  height: 60px;
+}
+
+.nav .logo a span {
+  font-size: 24px;
+}
+
+/* Nav links */
+.nav .links ul {
+  display: flex;
+}
+
+.nav .links ul li {
+  margin-left: 100px;
+}
+
+.nav ul li {
+  font-size: 18px;
+}
