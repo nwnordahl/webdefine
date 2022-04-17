@@ -24,9 +24,22 @@ a {
   text-decoration: none;
 }
 
+/* Make sure the input font in the form is inherited */
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+textarea:focus,
+a:focus,
+button:focus {
+  outline: none;
+}
+
 /* Nav */
 .nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 40px 150px 0px 150px;
   font-weight: bold;
@@ -136,7 +149,7 @@ a {
 
 /* About content button */
 .about-content .left .button {
-  width: 300px;
+  max-width: 300px;
   border: #ffcc00 solid 2px;
   font-size: 22px;
   font-weight: bold;
@@ -191,4 +204,100 @@ a {
 
 .projects-content .projects .project h2 {
   margin-bottom: 30px;
+}
+
+/* Contact content */
+.contact-content-container {
+  margin: 0 150px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content-container .contact-content {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+/* Left */
+.contact-content .left {
+  flex-shrink: 0;
+  margin-bottom: 100px;
+}
+
+/* Contact content text */
+.contact-content .left .text h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.contact-content .left .text p {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Right */
+.contact-content .right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content .right form label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.contact-content .right form input {
+  padding: 5px 20px;
+  border-radius: 12px;
+  background-color: #373a3b;
+  color: #ffcc00;
+  border: #ffcc00 solid 1px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-content .right form input:focus {
+  outline: none;
+}
+
+.contact-content .right form textarea {
+  padding: 10px 20px;
+  height: 200px;
+  width: 490px;
+  border-radius: 12px;
+  background-color: #373a3b;
+  color: #ffcc00;
+  border: #ffcc00 solid 1px;
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+
+.contact-content .right form textarea:focus {
+  outline: none;
+}
+
+.contact-content .right form button {
+  width: 230px;
+  border-radius: 12px;
+  background-color: #373a3b;
+  color: #ffcc00;
+  border: #ffcc00 solid 2px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px 0px;
+}
+
+.contact-content .right form button:hover,
+.contact-content .right form button:focus {
+  background-color: #ffcc00;
+  color: #373a3b;
+  border: #373a3b solid 2px;
+}
+
+.contact-content .right form button:hover {
+  cursor: pointer;
 }
