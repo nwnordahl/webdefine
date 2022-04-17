@@ -280,6 +280,7 @@ button:focus {
 }
 
 .contact-content .right form textarea {
+  resize: none;
   padding: 10px 20px;
   height: 200px;
   width: 490px;
