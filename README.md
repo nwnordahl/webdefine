@@ -2,6 +2,8 @@
 
 I denne oppgaven skal du etterligne ett ferdig design, i mappen `----bilder som mal----` finner du 4 bilder, denne siden skal du gjenskape ved hjelp av HTML, CSS og Javascript. Du trenger ikke tenke på at den skal være mobilvennlig, kun vises i desktop-størrelse.
 
+<img src="./img/screenshot.png"/>
+
 ## Krav til HTML
 
 I HTML filen ligger det allerede en bilde-tag `<img src="......./logo.png" />`, denne har ikke riktig mappe og må rettes opp i.
